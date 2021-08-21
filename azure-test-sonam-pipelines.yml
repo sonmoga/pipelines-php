@@ -29,6 +29,7 @@ steps:
   displayName: 'Install Composer'
 
 - script: './vendor/bin/phpunit --log-junit Test-Result.xml'
+#--debug --log-junit app/result.xml
   displayName: 'Run tests with phpunit'
   continueOnError: true
 
